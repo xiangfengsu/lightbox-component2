@@ -1,0 +1,47 @@
+---
+name: demo
+route: /
+order: -1
+sidebar: true
+---
+
+import { Playground } from "docz";
+import Lightbox from "./Lightbox";
+
+# Lightbox Component
+
+## demo
+
+<Playground>
+  {() => {
+    return (
+      <Lightbox
+        images={[
+          {
+            thumbnail:
+              "https://upload.wikimedia.org/wikipedia/commons/f/f3/Okataina.jpg",
+            src:
+              "https://testfile.rebornauto.cn/aliyunNAS/img/2019-08-01/2103/mortgagePictureUrl/58b25a32646a405886db3ae134e9d133.pdf",
+            title: "Ropy pahoehoe",
+            description:
+              "By Tari Noelani Mattox. Licensed under Public Domain via Commons"
+          },
+          {
+            src:
+              "https://upload.wikimedia.org/wikipedia/commons/7/73/Pyroclastic_flows_at_Mayon_Volcano.jpg",
+            title: "Pyroclastic flows at Mayon Volcano",
+            description:
+              "By C.G. Newhall. Licensed under Public Domain via Commons"
+          },
+          {
+            src:
+              "https://upload.wikimedia.org/wikipedia/commons/f/f3/Okataina.jpg",
+            title: "Okataina",
+            description:
+              "By Richard Waitt. Licensed under Public Domain via Commons"
+          }
+        ]}
+      />
+    );
+  }}
+</Playground>

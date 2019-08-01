@@ -1,0 +1,33 @@
+{
+  "name": "lightbox-component2",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "author": "dafeng",
+  "license": "MIT",
+  "module": "dist/index.esm.js",
+  "files": [
+    "lib",
+    "es"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xiangfengsu/lightbox-component2"
+  },
+  "scripts": {
+    "dev": "father build --watch",
+    "build": "father build",
+    "doc:dev": "father doc dev",
+    "doc:build": "father doc build",
+    "doc:deploy": "father doc deploy"
+  },
+  "devDependencies": {
+    "father": "^2.14.1",
+    "prop-types": "^15.7.2",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "dependencies": {
+    "react-pdf": "^4.1.0",
+    "react-transition-group": "1.x"
+  }
+}

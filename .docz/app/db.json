@@ -1,0 +1,607 @@
+{
+  "config": {
+    "title": "Lightbox Component2",
+    "description": "My awesome app using docz",
+    "menu": [],
+    "version": "1.0.0",
+    "repository": false,
+    "native": false,
+    "codeSandbox": true,
+    "themeConfig": {},
+    "separator": "-",
+    "typescript": false,
+    "theme": "/Users/suxiangfeng/Documents/suxiangfeng/myProject/react-component/lightbox-component2/node_modules/docz-theme-umi/es/index.js",
+    "plugins": [
+      {},
+      {},
+      {},
+      {},
+      {}
+    ]
+  },
+  "entries": [
+    {
+      "key": "src/components/demo.mdx",
+      "value": {
+        "name": "demo",
+        "route": "/",
+        "order": -1,
+        "sidebar": true,
+        "id": "44001d906afb814dd0d86697b8fd6ecc",
+        "filepath": "src/components/demo.mdx",
+        "link": "",
+        "slug": "src-components-demo",
+        "menu": "",
+        "headings": [
+          {
+            "slug": "lightbox-component",
+            "depth": 1,
+            "value": "Lightbox Component"
+          },
+          {
+            "slug": "demo",
+            "depth": 2,
+            "value": "demo"
+          }
+        ]
+      }
+    }
+  ],
+  "props": [
+    {
+      "key": "src/components/BodyPortal.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "BodyPortal",
+          "methods": [
+            {
+              "name": "_render",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "BodyPortal",
+          "props": {
+            "children": {
+              "type": {
+                "name": "node"
+              },
+              "required": false,
+              "description": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Button.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Button",
+          "methods": [],
+          "actualName": "Button",
+          "props": {
+            "onClick": {
+              "type": {
+                "name": "func"
+              },
+              "required": true,
+              "description": ""
+            },
+            "icon": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": ""
+            },
+            "hasRipple": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "false",
+                "computed": false
+              }
+            },
+            "size": {
+              "type": {
+                "name": "number"
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "24",
+                "computed": false
+              }
+            },
+            "selectedImage": {
+              "defaultValue": {
+                "value": "0",
+                "computed": false
+              },
+              "required": false
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Container.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Container",
+          "methods": [
+            {
+              "name": "getDescriptions",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "handleKeyboard",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "ev",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "handleLeftClick",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "handleRightClick",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "canMoveToLeft",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "canMoveToRight",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "toggleControls",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "Container",
+          "props": {
+            "selectedImage": {
+              "type": {
+                "name": "number"
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "0",
+                "computed": false
+              }
+            },
+            "images": {
+              "type": {
+                "name": "array"
+              },
+              "required": true,
+              "description": ""
+            },
+            "toggleLightbox": {
+              "type": {
+                "name": "func"
+              },
+              "required": true,
+              "description": ""
+            },
+            "showImageModifiers": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": ""
+            },
+            "renderDescriptionFunc": {
+              "type": {
+                "name": "func"
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "(descriptionText) => {\n  return (\n    <div>\n      {String(descriptionText)}\n    </div>\n  )\n}",
+                "computed": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Icon.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Icon",
+          "methods": [],
+          "actualName": "Icon",
+          "props": {
+            "icon": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": ""
+            },
+            "size": {
+              "type": {
+                "name": "number"
+              },
+              "required": true,
+              "description": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Image.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "ImageContent",
+          "methods": [
+            {
+              "name": "resetImageInitialState",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "props",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "handleWindowResize",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "handleRotate",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "angle",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "handleZoom",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "direction",
+                  "type": null
+                },
+                {
+                  "name": "scale",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "setZoomLimits",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "size",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "handleWheel",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "ev",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "handleMove",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "ev",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "handleMoveEnd",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "ev",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "handleMoveStart",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "ev",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "isInsideImage",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "ev",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "getEv",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "ev",
+                  "type": null
+                }
+              ],
+              "returns": null
+            },
+            {
+              "name": "renderPDF",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "ImageContent"
+        }
+      ]
+    },
+    {
+      "key": "src/components/ImageModifiers.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "ImageModifiers",
+          "methods": [
+            {
+              "name": "handleRotateClockwise",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "handleRotateCounterclockwise",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "handleZoomIn",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "handleZoomOut",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            },
+            {
+              "name": "handleDownload",
+              "docblock": null,
+              "modifiers": [],
+              "params": [],
+              "returns": null
+            }
+          ],
+          "actualName": "ImageModifiers",
+          "props": {
+            "handleRotate": {
+              "type": {
+                "name": "func"
+              },
+              "required": true,
+              "description": ""
+            },
+            "handleZoom": {
+              "type": {
+                "name": "func"
+              },
+              "required": true,
+              "description": ""
+            },
+            "currentImage": {
+              "type": {
+                "name": "string"
+              },
+              "required": true,
+              "description": ""
+            }
+          }
+        }
+      ]
+    },
+    {
+      "key": "src/components/Lightbox.jsx",
+      "value": [
+        {
+          "description": "",
+          "displayName": "Lightbox",
+          "methods": [
+            {
+              "name": "toggleLightbox",
+              "docblock": null,
+              "modifiers": [],
+              "params": [
+                {
+                  "name": "idx",
+                  "type": null
+                }
+              ],
+              "returns": null
+            }
+          ],
+          "actualName": "Lightbox",
+          "props": {
+            "images": {
+              "type": {
+                "name": "arrayOf",
+                "value": {
+                  "name": "shape",
+                  "value": {
+                    "src": {
+                      "name": "string",
+                      "required": true
+                    },
+                    "title": {
+                      "name": "string",
+                      "required": false
+                    },
+                    "description": {
+                      "name": "union",
+                      "value": [
+                        {
+                          "name": "string"
+                        },
+                        {
+                          "name": "object"
+                        }
+                      ],
+                      "required": false
+                    },
+                    "thumbnail": {
+                      "name": "string",
+                      "required": false
+                    }
+                  }
+                }
+              },
+              "required": true,
+              "description": ""
+            },
+            "showImageModifiers": {
+              "type": {
+                "name": "bool"
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "true",
+                "computed": false
+              }
+            },
+            "thumbnailWidth": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "\"80px\"",
+                "computed": false
+              }
+            },
+            "thumbnailHeight": {
+              "type": {
+                "name": "string"
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "\"80px\"",
+                "computed": false
+              }
+            },
+            "renderImageFunc": {
+              "type": {
+                "name": "func"
+              },
+              "required": false,
+              "description": "",
+              "defaultValue": {
+                "value": "(idx, image, toggleLightbox, width, height) => {\n  const isPdf = isPDFHandle(image.src);\n  if (isPdf) {\n    return (\n      <div\n        key={idx}\n        className=\"lightbox-img-thumbnail\"\n        style={{\n          width: width,\n          height: height,\n          display: \"inline-block\",\n          overflow: \"hidden\",\n          verticalAlign: \"middle\"\n        }}\n        alt={image.title}\n        onClick={toggleLightbox.bind(null, idx)}\n      >\n        <Document file={image.src}>\n          <Page pageNumber={1} />\n        </Document>\n      </div>\n    );\n  }\n  return (\n    <img\n      key={idx}\n      src={!!image.thumbnail ? image.thumbnail : image.src}\n      className=\"lightbox-img-thumbnail\"\n      style={{ width: width, height: height }}\n      alt={image.title}\n      onClick={toggleLightbox.bind(null, idx)}\n    />\n  );\n}",
+                "computed": false
+              }
+            },
+            "renderDescriptionFunc": {
+              "type": {
+                "name": "func"
+              },
+              "required": false,
+              "description": ""
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
