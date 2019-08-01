@@ -11,7 +11,7 @@
 
 # misc
 .DS_Store
-.docz
+/.docz
 
 
 npm-debug.log*
