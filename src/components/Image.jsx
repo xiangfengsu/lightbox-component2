@@ -12,9 +12,54 @@ const [MAX_ZOOM_SIZE, MIN_ZOOM_SIZE] = [
   Math.pow(1 / ZOOM_STEP, 10)
 ];
 
-const regpImageHandle = text =>
-  /^https?.*(gif|png|jpe?g|GIF|PNG|JPE?G)$/.test(text);
-const regpPdfHandle = text => /^https?.*(pdf|PDF)$/.test(text);
+
+
+const extname = (url = '') => {
+  const temp = url.split('/');
+  const filename = temp[temp.length - 1];
+  const filenameWithoutSuffix = filename.split(/#|\?/)[0];
+  return (/\.[^./\\]*$/.exec(filenameWithoutSuffix) || [''])[0];
+};
+
+// const regpPdfHandle = text => /^https?.*(pdf|PDF)$/.test(text);
+
+const isImageUrl = (url) => {
+  const extension = extname(url);
+  if (
+    /^data:image\//.test(url) ||
+    /(webp|svg|png|gif|jpg|jpeg|jfif|bmp|dpg|ico)$/i.test(extension)
+  ) {
+    return true;
+  }
+  if (/^data:/.test(url)) {
+    // other file types of base64
+    return false;
+  }
+  if (extension) {
+    // other file types which have extension
+    return false;
+  }
+  return false;
+};
+
+const regpPdfHandle = (url) => {
+  const extension = extname(url);
+  if (
+    /^data:application\/pdf/.test(url) ||
+    /(pdf|PDF)$/i.test(extension)
+  ) {
+    return true;
+  }
+  if (/^data:/.test(url)) {
+    // other file types of base64
+    return false;
+  }
+  if (extension) {
+    // other file types which have extension
+    return false;
+  }
+  return true;
+};
 
 export default class ImageContent extends React.Component {
   constructor(props) {
@@ -298,7 +343,7 @@ export default class ImageContent extends React.Component {
     let transform = `rotate(${state.rotate}deg)`;
     let styles = {
       height: "100%",
-      backgroundImage: regpImageHandle(props.src) ? background : "none",
+      backgroundImage: isImageUrl(props.src) ? background : "none",
       backgroundRepeat: "no-repeat",
       backgroundSize: `${state.width * state.ratio}px ${state.height *
         state.ratio}px`,
@@ -308,6 +353,7 @@ export default class ImageContent extends React.Component {
       transform: transform
     };
 
+
     return (
       <div className="lightbox-content-center">
         {modifiers}
@@ -316,7 +362,7 @@ export default class ImageContent extends React.Component {
             className={"lightbox-image" + (state.moving ? " moving" : "")}
             style={styles}
           >
-            {regpPdfHandle(props.src) ? this.renderPDF() : loader}
+            {regpPdfHandle(props.src) ? this.renderPDF() : "文件格式无法展示"}
           </div>
         </div>
       </div>

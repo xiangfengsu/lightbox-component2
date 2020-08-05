@@ -7,7 +7,7 @@ import { imports } from './imports'
 import database from './db.json'
 
 const Root = () => {
-  useDataServer('ws://127.0.0.1:60506')
+  useDataServer('ws://127.0.0.1:60505')
   return (
     <Theme linkComponent={Link} db={database}>
       <Routes imports={imports} />

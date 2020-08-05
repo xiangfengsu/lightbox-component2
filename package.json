@@ -1,6 +1,6 @@
 {
   "name": "lightbox-component2",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "main": "lib/index.js",
   "author": "dafeng",
   "license": "MIT",
@@ -27,7 +27,6 @@
     "react-dom": "^16.8.6"
   },
   "dependencies": {
-    "react-pdf": "^4.1.0",
     "react-transition-group": "1.x"
   }
 }
